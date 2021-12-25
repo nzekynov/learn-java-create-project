@@ -21,14 +21,16 @@ public class SaveStudentOrder {
 
     static StudentOrder buildStudentOrder() {
         StudentOrder so = new StudentOrder();
+
         Adult husband = new Adult();
-        husband.setGivenName("Андрей");
+
+        /*husband.setGivenName("Андрей");
         husband.setSurname("Петров");
         husband.setPassportNumber("123456");
-        so.setHusband(husband);
+        so.setHusband(husband);*/
 
-        String ans = husband.getPersonString();
-        System.out.println(ans);
+        /*String ans = husband.getPersonString();
+        System.out.println(ans);*/
 
         return so;
     }
