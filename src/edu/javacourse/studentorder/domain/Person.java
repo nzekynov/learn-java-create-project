@@ -3,22 +3,21 @@ package edu.javacourse.studentorder.domain;
 import java.time.LocalDate;
 
 public abstract class Person {
-    protected String surname;
-    protected String givenName;
+    private String surname;
+    private String givenName;
     private String patronymic;
     private LocalDate dateOfBirth;
     private Address address;
 
     public Person() {
-        System.out.println("Person is created");
+
     }
 
-    public String getPersonString() {
-        return surname + " " + givenName;
-    }
-
-    public String getSurname() {
-        return surname;
+    public Person(String surname, String givenName, String patronymic, LocalDate dateOfBirth) {
+        this.surname = surname;
+        this.givenName = givenName;
+        this.patronymic = patronymic;
+        this.dateOfBirth = dateOfBirth;
     }
 
     public void setSurname(String surname) {
